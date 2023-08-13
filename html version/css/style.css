@@ -121,7 +121,8 @@ body {
 .nav {
   padding: 20px 0;
   color: #fff;
-  background: #171718;
+  background-color: #171718;
+  border-bottom: 1px solid #26292d;
 }
 
 .nav-menu {
@@ -134,14 +135,29 @@ body {
   flex-wrap: wrap;
 }
 
-.nav-list {
-  display: flex;
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+.logo span {
+  font-weight: 700;
 }
 
-.nav-list__item:not(:last-child) {
-  padding-right: 20px;
+.nav-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
-.nav-list__item a {
+
+.nav-list__link {
   color: #fff;
   cursor: pointer;
+}
+.nav-list__link.nav-list__link--active {
+  border-bottom: 3px solid #5c62ec;
 }/*# sourceMappingURL=style.css.map */
